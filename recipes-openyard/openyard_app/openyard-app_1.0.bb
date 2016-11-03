@@ -16,12 +16,12 @@ INHIBIT_DEFAULT_DEPS = "1"
 do_install() {
     # Main Qt application
     install -d ${D}${datadir}/${P}
+    install -m 0755 ${B}/openyard_app ${D}${datadir}/${P}
     cp -a ${S}/ ${D}${datadir}/${P}
 }
 
+
+FILES_${PN}-dbg += "${datadir}/${P}/.debug"
+FILES_${PN} += "${datadir}"
+
 RDEPENDS_${PN} += " nodejs"
-
-# FILES_${PN}-dbg += "${datadir}/${P}/.debug"
-# FILES_${PN} += "${datadir} ${systemd_unitdir} ${sysconfdir}"
-
-# RDEPENDS_${PN} = "qtdeclarative-qmlplugins gstreamer qtmultimedia qtserialport"
