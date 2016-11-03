@@ -36,4 +36,4 @@ IMAGE_CONFIG ??= " nodejs "
 
 ROOTFS_POSTPROCESS_COMMAND =+ " install_config_packages; "
 
-RDEPENDS += "${IMAGE_CONFIG}"
+RDEPENDS_${PN} += "${IMAGE_CONFIG}"
