@@ -23,12 +23,12 @@ IMAGE_INSTALL += "\
   openyard-app \
 "
 
-EXTRA_IMAGE_FEATURES += " package-management "
+# EXTRA_IMAGE_FEATURES += " package-management "
 
 # Config packages: can overwrite files in other packages
 # Make sure a value is always set
 IMAGE_CONFIG ??= " nodejs "
 
-ROOTFS_POSTPROCESS_COMMAND =+ " install_config_packages; "
+# ROOTFS_POSTPROCESS_COMMAND =+ " install_config_packages; "
 
 RDEPENDS_${PN} += "${IMAGE_CONFIG}"
