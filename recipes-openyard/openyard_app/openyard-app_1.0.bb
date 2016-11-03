@@ -22,7 +22,7 @@ do_install() {
 
 RDEPENDS_${PN} += " nodejs"
 
-// FILES_${PN}-dbg += "${datadir}/${P}/.debug"
-// FILES_${PN} += "${datadir} ${systemd_unitdir} ${sysconfdir}"
+# FILES_${PN}-dbg += "${datadir}/${P}/.debug"
+# FILES_${PN} += "${datadir} ${systemd_unitdir} ${sysconfdir}"
 
-// RDEPENDS_${PN} = "qtdeclarative-qmlplugins gstreamer qtmultimedia qtserialport"
+# RDEPENDS_${PN} = "qtdeclarative-qmlplugins gstreamer qtmultimedia qtserialport"
