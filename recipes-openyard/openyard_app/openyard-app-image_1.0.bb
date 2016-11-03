@@ -32,7 +32,7 @@ PACKAGECONFIG_append_pn-qtmultimedia = " "
 
 # Config packages: can overwrite files in other packages
 # Make sure a value is always set
-IMAGE_CONFIG ??= " "
+IMAGE_CONFIG ??= " nodejs "
 
 ROOTFS_POSTPROCESS_COMMAND =+ " install_config_packages; "
 
