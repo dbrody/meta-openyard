@@ -1,7 +1,7 @@
 SUMMARY = "OpenYard Application"
 DESCRIPTION = "OpenYard Application"
 LICENSE = "Proprietary"
-LIC_FILES_CHKSUM = "file://LICENSE;md5=95cec7fbf076d62538f183af61e2c82e"
+LIC_FILES_CHKSUM = "file://LICENSE;md5=d4908b1e39cc61772e5d74e5fb77d241"
 
 FILESEXTRAPATHS_prepend := "${THISDIR}/../../src/:"
 
