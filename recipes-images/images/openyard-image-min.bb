@@ -4,7 +4,7 @@ LICENSE = "MIT"
 
 require ../../../meta-raspberrypi/recipes-core/images/rpi-basic-image.bb
 
-IMAGE_FEATURES += " nodejs"
+IMAGE_FEATURES += " "
 
 IMAGE_ROOTFS_SIZE ?= "8192"
 
