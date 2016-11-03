@@ -2,7 +2,7 @@ SUMMARY = "OpenYard Minimial Image"
 DESCRIPTION = "Image for OpenYard development"
 LICENSE = "MIT"
 
-include rpi-basic-image.bb
+require ../../../meta-raspberrypi/recipes-core/images/rpi-basic-image.bb
 
 IMAGE_FEATURES += " nodejs"
 
