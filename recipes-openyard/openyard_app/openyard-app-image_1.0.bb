@@ -11,7 +11,7 @@ IMAGE_ROOTFS_SIZE ?= "8192"
 DISTRO_FEATURES += " \
 "
 
-IMAGE_INSTALL = " \
+IMAGE_INSTALL += " \
   gcc-4.8-multilib \
   g++-4.8-multilib \
   nodejs \
