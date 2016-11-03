@@ -9,12 +9,12 @@ include rpi-basic-image.bb
 IMAGE_ROOTFS_SIZE ?= "8192"
 
 DISTRO_FEATURES += " \
-    gcc-4.8-multilib \
-    g++-4.8-multilib \
-    nodejs \
 "
 
 IMAGE_INSTALL = " \
+  gcc-4.8-multilib \
+  g++-4.8-multilib \
+  nodejs \
 "
 
 # this is a pure qt5 embedded demo image without X
