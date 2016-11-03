@@ -4,7 +4,7 @@ LICENSE = "MIT"
 
 include rpi-basic-image.bb
 
-# IMAGE_FEATURES += " nodejs"
+IMAGE_FEATURES += " nodejs"
 
 IMAGE_ROOTFS_SIZE ?= "8192"
 
@@ -26,9 +26,6 @@ IMAGE_INSTALL += "\
 "
 
 EXTRA_IMAGE_FEATURES += " package-management "
-
-PACKAGECONFIG_append_pn-qtbase = " "
-PACKAGECONFIG_append_pn-qtmultimedia = " "
 
 # Config packages: can overwrite files in other packages
 # Make sure a value is always set
