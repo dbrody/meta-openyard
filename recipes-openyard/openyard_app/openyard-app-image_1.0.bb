@@ -22,7 +22,7 @@ IMAGE_INSTALL = " \
 # REQUIRED_DISTRO_FEATURES = "opengl pulseaudio"
 
 IMAGE_INSTALL += "\
-    openyard-app \
+  openyard-app \
 "
 
 EXTRA_IMAGE_FEATURES += " package-management "
@@ -32,7 +32,7 @@ PACKAGECONFIG_append_pn-qtmultimedia = " "
 
 # Config packages: can overwrite files in other packages
 # Make sure a value is always set
-IMAGE_CONFIG ??= " nodejs "
+IMAGE_CONFIG ??= " "
 
 ROOTFS_POSTPROCESS_COMMAND =+ " install_config_packages; "
 
